@@ -58,8 +58,42 @@ body{
     color: black;
     cursor: pointer;
 }
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    position: absolute;
+    border: solid black 1px;
+    padding: 10px;
+    background-color: white;
+    width:100px;
+    top: 150%;
+    padding: 20px;
+    right: 0%;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
 .sale__image img{
     width:100%;
+}
+.sale__image{
+    position: relative;
+}
+.sale__image__offer{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: black;
+    margin: 20px;
+    border: solid black 5px;
+    width:500px;
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+    background-color: aliceblue;
 }
 .recommended{
 padding: 10px;
