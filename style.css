@@ -35,6 +35,7 @@ body{
     width: 100%;
     font-size: 15px;
     outline: none;
+    background-color: transparent;
 }
 .navbar__s3{
     display: flex;
@@ -55,11 +56,14 @@ body{
     border-radius: 30px;
     background-color: #A435F0;
     color: white;
+    cursor: pointer;
 }
 .catagories p:hover{
-    background-color: white;
+    background-color: transparent;
     color: black;
-    cursor: pointer;
+    transition: 1s;
+    border: solid #A435F0 1px;
+
 }
 .mylearning{
     position: relative;
@@ -98,6 +102,20 @@ body{
     padding: 10px;
     height: 100px;
     background-color: aliceblue;
+    animation: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommended{
 padding: 10px;
