@@ -197,7 +197,7 @@ padding: 10px;
 
 @media screen and (max-width: 600px){
     body{
-        font-size: 12px;
+        font-size: 10px;
     }
     .course-card{
         flex-basis: 40%;
